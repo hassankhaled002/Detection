@@ -1,8 +1,6 @@
 from flask import Flask, request, jsonify
 import sys
 import os
-os.chdir('Detection_and_recognition')
-
 from detection_recognition_Methods import get_students_enc_ids,check_person_images,attendance_by_images
 from flask_cors import CORS
 from PIL import Image
