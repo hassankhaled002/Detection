@@ -46,4 +46,4 @@ def get_attendance():
         error_message = f"An error occurred: {str(e)}"
         return jsonify({"error": error_message}), 400
 if __name__ == '__main__':
-    app.run(debug=False,port=9999)
+    app.run(debug=False,port=5555,host="0.0.0.0")
